@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Total Troco</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+			<section class="container">
+					<h2 id="titulo-form">Calcule seu troco</h2>						
+						<form id="form-adiciona"></form>
+						<div class="">
+							<label for="valorTotal">Valor total da compra:</label>
+							<input id="valorTotal" name="valorTotal" type="text" placeholder="Digite o Valor Total da Compra" class="campo" onkeyup="somenteNumeros(this);">
+						</div>
+						<div class="grupo">
+							<label for="valorPago">Valor Pago:</label>
+							<input id="valorPago" name="valorPago" type="text" placeholder="Digite o Valor Pago na Compra" class="campo campo-medio" onkeyup="somenteNumeros(this);">
+						</div>
+						<br>
+						<button id="listar-troco" class="botao" onclick="return validar()">Listar Troco</button>
+		    		</form>
+			</section>	
+
+		<main>
+				<section class="container">
+					<h2>Valor do Troco</h2>
+					<input id="valorTroco" name="valorTroco" type="text"  class="campo">	
+				</section>
+		</main>
+
+		<main>
+				<section class="container">
+					<h2>Quantidade de Cédulas</h2>
+
+					<table>
+						<thead>
+							<tr>
+								<th>Quantidade</th>
+								<th>Cédula / Moeda</th>
+							</tr>
+						</thead>
+					</table>	
+				</section>
+		</main>
+
+		<script src="js/funcaotroco.js" ></script>
+		<script src="js/somenteNumeros.js" ></script>
+
+	</body>
+</html>
